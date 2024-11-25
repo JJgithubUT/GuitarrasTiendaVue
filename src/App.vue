@@ -59,7 +59,7 @@ const total = computed(() => {
             reduce((t, g) => t + (g.precio * g.cantidad), 0)
 })
 
-watch(carrito, guardarLocalStorage)
+watch(carrito, guardarLocalStorage, { deep: true })
 
 </script>
 
